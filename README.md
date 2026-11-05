@@ -71,3 +71,7 @@ The application will be accessible at `https://localhost:8443`.
 *   **[Name]** - Application Security Specialist (RBAC, Prompt Injection Defense, Rate Limiting)
 *   **[Name]** - Data & Storage Security Specialist (Vector DB Encryption, Secret Management)
 *   **[Name]** - System & Network Security Specialist (Dockerization, Nginx, Network Isolation)
+
+links:
+https://huggingface.co/Qwen/Qwen2.5-Coder-7B
+https://nvd.nist.gov/general
