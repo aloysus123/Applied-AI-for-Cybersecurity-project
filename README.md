@@ -67,10 +67,10 @@ The application will be accessible at `https://localhost:8443`.
 4. Review the generated vulnerability report and suggested code patches.
 
 ## Team Allocation (Scenario A)
-*   **[Name]** - Local AI Solution Lead (UI, Ollama, RAG Pipeline)
-*   **[Name]** - Application Security Specialist (RBAC, Prompt Injection Defense, Rate Limiting)
-*   **[Name]** - Data & Storage Security Specialist (Vector DB Encryption, Secret Management)
-*   **[Name]** - System & Network Security Specialist (Dockerization, Nginx, Network Isolation)
+*   **Aloysius** - Local AI Solution Lead (UI, Ollama, RAG Pipeline)
+*   **Kieran** - Application Security Specialist (RBAC, Prompt Injection Defense, Rate Limiting)
+*   **Seth** - Data & Storage Security Specialist (Vector DB Encryption, Secret Management)
+*   **Jayden** - System & Network Security Specialist (Dockerization, Nginx, Network Isolation)
 
 links:
 https://huggingface.co/Qwen/Qwen2.5-Coder-7B
