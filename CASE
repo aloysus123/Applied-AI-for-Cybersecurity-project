@@ -1,0 +1,6 @@
+Combating Alert Fatigue with NVD-Grounded Context
+A Tier 1 security analyst is tasked with reviewing daily reports from a traditional Static Application Security Testing (SAST) tool. 
+The legacy tool relies on rigid regular expressions and flags thousands of potential issues with no context, causing severe alert fatigue. 
+Instead of manually researching every alert, the analyst feeds the suspicious code snippets into your scanner. 
+The RAG pipeline cross-references the code directly against the local NIST NVD database, filtering out false positives 
+and prioritizing only the vulnerabilities that map to real, documented CVEs.
