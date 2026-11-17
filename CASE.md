@@ -1,0 +1,4 @@
+The Problem:
+Security operations teams face severe alert fatigue when using traditional Static Application Security Testing (SAST) tools because these scanners generate high volumes of false positives without providing remediation context. While Large Language Models can resolve this by analyzing code semantics and generating fixes, uploading proprietary corporate source code to public cloud APIs violates strict data privacy policies and risks intellectual property leakage.
+The Solution:
+This project delivers a completely air-gapped, hybrid vulnerability scanner that combines deterministic SAST screening (Bandit) with a Local AI engine (qwen2.5-coder:7b). By utilizing a Retrieval-Augmented Generation (RAG) pipeline, the system cross-references Bandit’s findings with the OWASP Top 10 and local NVD data to dynamically calculate CVSS risk scores and generate context-aware code patches—all while operating securely on local hardware to guarantee zero IP leakage
