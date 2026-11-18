@@ -1,0 +1,6 @@
+datasets:
+https://github.com/OWASP/Top10
+https://github.com/OWASP/CheatSheetSeries
+https://cwe.mitre.org/data/definitions/699.html
+https://huggingface.co/datasets/hitoshura25/cvefixes
+https://www.cve.org/
