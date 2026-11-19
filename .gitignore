@@ -1,105 +1,45 @@
-# ==========================================
-# Python & Virtual Environments
-# ==========================================
+# === Environments & Dependencies ===
+venv/
+.venv/
+env/
+*/venv/
+*/.venv/
+**/venv/
+**/.venv/
+
+# === Python Cache & Artifacts ===
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+.pytest_cache/
 
-# Virtual environments
-venv/
-.venv/
-env/
-ENV/
-env.bak/
-venv.bak/
-
-# ==========================================
-# Environment Variables & Secrets
-# ==========================================
+# === Environment Variables & Secrets ===
 .env
-.env.*
+*.env
 !.env.example
+ai_scanner/.env
+
+# === Local Persistent Storage & Databases ===
+ai_scanner/data/raw/*
+!ai_scanner/data/raw/.gitkeep
+ai_scanner/data/processed/*
+!ai_scanner/data/processed/.gitkeep
+ai_scanner/data/chroma_db/*
+!ai_scanner/data/chroma_db/.gitkeep
+ai_scanner/data/users.db
+*.db
+*.sqlite3
+
+# === TLS Certificates & Keys ===
+ai_scanner/infra/nginx/certs/*
+!ai_scanner/infra/nginx/certs/.gitkeep
 *.pem
 *.key
 *.crt
-secrets.json
 
-# ==========================================
-# Local Databases, Vector Stores & Scans
-# ==========================================
-# SQLite
-*.db
-*.sqlite
-*.sqlite3
-*.db-journal
-*.db-wal
-*.db-shm
-
-# ChromaDB & RAG local persistence
-chroma/
-chroma_db/
-.chroma/
-vector_store/
-embeddings/
-
-# Bandit & temporary scan outputs / uploads
-uploads/
-temp_scans/
-scan_reports/
-bandit_output.json
-
-# ==========================================
-# Ollama / Local LLM Weights & Cache
-# ==========================================
-models/
-*.gguf
-*.bin
-*.safetensors
-.ollama/
-
-# ==========================================
-# Docker & Nginx Local Overrides
-# ==========================================
-docker-compose.override.yml
-nginx/logs/
-*.log
-logs/
-
-# ==========================================
-# IDEs & Editors (VS Code, Antigravity, JetBrains)
-# ==========================================
+# === IDE & OS Junk ===
 .vscode/
-.antigravity/
 .idea/
-*.swp
-*.swo
-*~
-
-# ==========================================
-# Operating System Files
-# ==========================================
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
