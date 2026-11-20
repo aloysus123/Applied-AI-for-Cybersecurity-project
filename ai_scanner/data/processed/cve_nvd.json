@@ -1,0 +1,1580 @@
+[
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-10252",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "langgenius/dify"
+    ],
+    "cvss_score": 8.8,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A vulnerability in langgenius/dify versions <=v0.9.1 allows for code injection via internal SSRF requests in the Dify sandbox service. This vulnerability enables an attacker to execute arbitrary Python code with root privileges within the sandbox environment, potentially leading to the deletion of the entire sandbox service and causing irreversible damage.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-10902",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "eosphoros-ai/db-gpt"
+    ],
+    "cvss_score": 9.1,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+    "description": "In eosphoros-ai/db-gpt version v0.6.0, the web API `POST /v1/personal/agent/upload` is vulnerable to Arbitrary File Upload with Path Traversal. This vulnerability allows unauthorized attackers to upload arbitrary files to the victim's file system at any location. The impact of this vulnerability includes the potential for remote code execution (RCE) by writing malicious files, such as a malicious `__init__.py` in the Python's `/site-packages/` directory.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-11039",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "binary-husky/gpt_academic"
+    ],
+    "cvss_score": 8.8,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A pickle deserialization vulnerability exists in the Latex English error correction plug-in function of binary-husky/gpt_academic versions up to and including 3.83. This vulnerability allows attackers to achieve remote command execution by deserializing untrusted data. The issue arises from the inclusion of numpy in the deserialization whitelist, which can be exploited by constructing a malicious compressed package containing a merge_result.pkl file and a merge_proofread_en.tex file. The vulnerability is fixed in commit 91f5e6b.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-12366",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "PandasAI"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "PandasAI uses an interactive prompt function that is vulnerable to prompt injection and run arbitrary Python code that can lead to Remote Code Execution (RCE) instead of the intended explanation of the natural language processing by the LLM.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-1728",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "gradio-app/gradio"
+    ],
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "description": "gradio-app/gradio is vulnerable to a local file inclusion vulnerability due to improper validation of user-supplied input in the UploadButton component. Attackers can exploit this vulnerability to read arbitrary files on the filesystem, such as private SSH keys, by manipulating the file path in the request to the `/queue/join` endpoint. This issue could potentially lead to remote code execution. The vulnerability is present in the handling of file upload paths, allowing attackers to redirect file uploads to unintended locations on the server.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-21485",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "dash-core-components",
+      "dash-core-components",
+      "dash",
+      "dash-html-components",
+      "dash-html-components"
+    ],
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:L/A:N/E:P",
+    "description": "Versions of the package dash-core-components before 2.13.0; versions of the package dash-core-components before 2.0.0; versions of the package dash before 2.15.0; versions of the package dash-html-components before 2.0.0; versions of the package dash-html-components before 2.0.16 are vulnerable to Cross-site Scripting (XSS) when the href of the a tag is controlled by an adversary. An authenticated attacker who stores a view that exploits this vulnerability could steal the data that's visible to another user who opens that view - not just the data already included on the page, but they could also, in theory, make additional requests and access other data accessible to this user. In some cases, they could also steal the access tokens of that user, which would allow the attacker to act as that user, including viewing other apps and resources hosted on the same server. **Note:** This is only exploitable in Dash apps that include some mechanism to store user input to be reloaded by a different user.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-21513",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "langchain-experimental"
+    ],
+    "cvss_score": 8.5,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H/E:P",
+    "description": "Versions of the package langchain-experimental from 0.0.15 and before 0.0.21 are vulnerable to Arbitrary Code Execution when retrieving values from the database, the code will attempt to call 'eval' on all values. An attacker can exploit this vulnerability and execute arbitrary python code if they can control the input prompt and the server is configured with VectorSQLDatabaseChain. **Notes:** Impact on the Confidentiality, Integrity and Availability of the vulnerable component: Confidentiality: Code execution happens within the impacted component, in this case langchain-experimental, so all resources are necessarily accessible. Integrity: There is nothing protected by the impacted component inherently. Although anything returned from the component counts as 'information' for which the trustworthiness can be compromised. Availability: The loss of availability isn't caused by the attack itself, but it happens as a result during the attacker's post-exploitation steps. Impact on the Confidentiality, Integrity and Availability of the subsequent system: As a legitimate low-privileged user of the package (PR:L) the attacker does not have more access to data owned by the package as a result of this vulnerability than they did with normal usage (e.g. can query the DB). The unintended action that one can perform by breaking out of the app environment and exfiltrating files, making remote connections etc. happens during the post exploitation phase in the subsequent system - in this case, the OS. AT:P: An attacker needs to be able to influence the input prompt, whilst the server is configured with the VectorSQLDatabaseChain plugin.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-21520",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "djangorestframework"
+    ],
+    "cvss_score": 6.1,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:P",
+    "description": "Versions of the package djangorestframework before 3.15.2 are vulnerable to Cross-site Scripting (XSS) via the break_long_headers template filter due to improper input sanitization before splitting and joining with tags.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-21542",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22",
+      "CWE-29"
+    ],
+    "affected_products": [
+      "luigi"
+    ],
+    "cvss_score": 8.6,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N/E:P",
+    "description": "Versions of the package luigi before 3.6.0 are vulnerable to Arbitrary File Write via Archive Extraction (Zip Slip) due to improper destination file path validation in the _extract_packages_archive function.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-21543",
+    "target_cwes": [
+      "CWE-295"
+    ],
+    "all_cwes": [
+      "CWE-287",
+      "CWE-295"
+    ],
+    "affected_products": [
+      "djoser"
+    ],
+    "cvss_score": 7.1,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N/E:P",
+    "description": "Versions of the package djoser before 2.3.0 are vulnerable to Authentication Bypass when the authenticate() function fails. This is because the system falls back to querying the database directly, granting access to users with valid credentials, and eventually bypassing custom authentication checks such as two-factor authentication, LDAP validations, or requirements from configured AUTHENTICATION_BACKENDS.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-21574",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "ComfyUI-Manager"
+    ],
+    "cvss_score": 10,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "description": "The issue stems from a missing validation of the pip field in a POST request sent to the /customnode/install endpoint used to install custom nodes which is added to the server by the extension. This allows an attacker to craft a request that triggers a pip install on a user controlled package or URL, resulting in remote code execution (RCE) on the server.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-22195",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "jinja"
+    ],
+    "cvss_score": 5.4,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+    "description": "Jinja is an extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. It is possible to inject arbitrary HTML attributes into the rendered HTML template, potentially leading to Cross-Site Scripting (XSS). The Jinja `xmlattr` filter can be abused to inject arbitrary HTML attribute keys and values, bypassing the auto escaping mechanism and potentially leading to XSS. It may also be possible to bypass attribute validation checks if they are blacklist-based.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-22199",
+    "target_cwes": [
+      "CWE-20",
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-116",
+      "CWE-20",
+      "CWE-79"
+    ],
+    "affected_products": [
+      "template"
+    ],
+    "cvss_score": 9.3,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:N",
+    "description": "This package provides universal methods to use multiple template engines with the Fiber web framework using the Views interface. This vulnerability specifically impacts web applications that render user-supplied data through this template engine, potentially leading to the execution of malicious scripts in users' browsers when visiting affected web pages. The vulnerability has been addressed, the template engine now defaults to having autoescape set to `true`, effectively mitigating the risk of XSS attacks.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-22414",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "flaskBlog"
+    ],
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+    "description": "flaskBlog is a simple blog app built with Flask. Improper storage and rendering of the `/user/ ` page allows a user's comments to execute arbitrary javascript code. The html template `user.html` contains the following code snippet to render comments made by a user: ` {{comment[2]|safe}} `. Use of the \"safe\" tag causes flask to _not_ escape the rendered content. To remediate this, simply remove the `|safe` tag from the HTML above. No fix is is available and users are advised to manually edit their installation.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-23334",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "aiohttp"
+    ],
+    "cvss_score": 5.9,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "description": "aiohttp is an asynchronous HTTP client/server framework for asyncio and Python. When using aiohttp as a web server and configuring static routes, it is necessary to specify the root path for static files. Additionally, the option 'follow_symlinks' can be used to determine whether to follow symbolic links outside the static root directory. When 'follow_symlinks' is set to True, there is no validation to check if reading a file is within the root directory. This can lead to directory traversal vulnerabilities, resulting in unauthorized access to arbitrary files on the system, even when symlinks are not present. Disabling follow_symlinks and using a reverse proxy are encouraged mitigations. Version 3.9.2 fixes this issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-23633",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "label-studio"
+    ],
+    "cvss_score": 4.7,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N",
+    "description": "Label Studio, an open source data labeling tool had a remote import feature allowed users to import data from a remote web source, that was downloaded and could be viewed on the website. Prior to version 1.10.1, this feature could had been abused to download a HTML file that executed malicious JavaScript code in the context of the Label Studio website. Executing arbitrary JavaScript could result in an attacker performing malicious actions on Label Studio users if they visit the crafted avatar image. For an example, an attacker can craft a JavaScript payload that adds a new Django Super Administrator user if a Django administrator visits the image. `data_import/uploader.py` lines 125C5 through 146 showed that if a URL passed the server side request forgery verification checks, the contents of the file would be downloaded using the filename in the URL. The downloaded file path could then be retrieved by sending a request to `/api/projects/{project_id}/file-uploads?ids=[{download_id}]` where `{project_id}` was the ID of the project and `{download_id}` was the ID of the downloaded file. Once the downloaded file path was retrieved by the previous API endpoint, `data_import/api.py`lines 595C1 through 616C62 demonstrated that the `Content-Type` of the response was determined by the file extension, since `mimetypes.guess_type` guesses the `Content-Type` based on the file extension. Since the `Content-Type` was determined by the file extension of the downloaded file, an attacker could import in a `.html` file that would execute JavaScript when visited. Version 1.10.1 contains a patch for this issue. Other remediation strategies are also available. For all user provided files that are downloaded by Label Studio, set the `Content-Security-Policy: sandbox;` response header when viewed on the site. The `sandbox` directive restricts a page's actions to prevent popups, execution of plugins and scripts and enforces a `same-origin` policy. Alternatively, restrict the allowed file extensions that may be downloaded.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-24559",
+    "target_cwes": [
+      "CWE-327"
+    ],
+    "all_cwes": [
+      "CWE-327"
+    ],
+    "affected_products": [
+      "vyper"
+    ],
+    "cvss_score": 3.7,
+    "cvss_severity": "LOW",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "description": "Vyper is a Pythonic Smart Contract Language for the EVM. There is an error in the stack management when compiling the `IR` for `sha3_64`. Concretely, the `height` variable is miscalculated. The vulnerability can't be triggered without writing the `IR` by hand (that is, it cannot be triggered from regular vyper code). `sha3_64` is used for retrieval in mappings. No flow that would cache the `key` was found so the issue shouldn't be possible to trigger when compiling the compiler-generated `IR`. This issue isn't triggered during normal compilation of vyper code so the impact is low. At the time of publication there is no patch available.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-24812",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79",
+      "CWE-80"
+    ],
+    "affected_products": [
+      "frappe"
+    ],
+    "cvss_score": 5.4,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+    "description": "Frappe is a full-stack web application framework that uses Python and MariaDB on the server side and a tightly integrated client side library. Prior to versions 14.59.0 and 15.5.0, portal pages are susceptible to Cross-Site Scripting (XSS) which can be used to inject malicious JS code if user clicks on a malicious link. This vulnerability has been patched in versions 14.59.0 and 15.5.0. No known workarounds are available.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-25141",
+    "target_cwes": [
+      "CWE-295"
+    ],
+    "all_cwes": [
+      "CWE-295"
+    ],
+    "affected_products": [
+      "Apache Airflow Mongo Provider"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "When ssl was enabled for Mongo Hook, default settings included \"allow_insecure\" which caused that certificates were not validated. This was unexpected and undocumented. Users are recommended to upgrade to version 4.0.0, which fixes this issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-26151",
+    "target_cwes": [
+      "CWE-20"
+    ],
+    "all_cwes": [
+      "CWE-20"
+    ],
+    "affected_products": [
+      "mjml-python"
+    ],
+    "cvss_score": 8.2,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:L",
+    "description": "The `mjml` PyPI package, found at the `FelixSchwarz/mjml-python` GitHub repo, is an unofficial Python port of MJML, a markup language created by Mailjet. All users of `FelixSchwarz/mjml-python` who insert untrusted data into mjml templates unless that data is checked in a very strict manner. User input like ` ` would be rendered as ` ` in the final HTML output. The attacker must be able to control some data which is later injected in an mjml template which is then send out as email to other users. The attacker could control contents of email messages sent through the platform. The problem has been fixed in version 0.11.0 of this library. Versions before 0.10.0 are not affected by this security issue. As a workaround, ensure that potentially untrusted user input does not contain any sequences which could be rendered as HTML.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-27083",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "Flask-AppBuilder"
+    ],
+    "cvss_score": 4.3,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+    "description": "Flask-AppBuilder is an application development framework, built on top of Flask. A Cross-Site Scripting (XSS) vulnerability has been discovered on the OAuth login page. An attacker could trick a user to follow a specially crafted URL to the OAuth login page. This URL could inject and execute malicious javascript code that would get executed on the user's browser. This issue was introduced on 4.1.4 and patched on 4.2.1.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-27306",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79",
+      "CWE-80"
+    ],
+    "affected_products": [
+      "aiohttp"
+    ],
+    "cvss_score": 6.1,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "description": "aiohttp is an asynchronous HTTP client/server framework for asyncio and Python. A XSS vulnerability exists on index pages for static file handling. This vulnerability is fixed in 3.9.4. We have always recommended using a reverse proxy server (e.g. nginx) for serving static files. Users following the recommendation are unaffected. Other users can disable `show_index` if unable to upgrade.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-29189",
+    "target_cwes": [
+      "CWE-78"
+    ],
+    "all_cwes": [
+      "CWE-78"
+    ],
+    "affected_products": [
+      "pyansys-geometry"
+    ],
+    "cvss_score": 7.4,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "PyAnsys Geometry is a Python client library for the Ansys Geometry service and other CAD Ansys products. On file src/ansys/geometry/core/connection/product_instance.py, upon calling this method _start_program directly, users could exploit its usage to perform malicious operations on the current machine where the script is ran. This vulnerability is fixed in 0.3.3 and 0.4.12.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-29201",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "jumpserver"
+    ],
+    "cvss_score": 10,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+    "description": "JumpServer is an open source bastion host and an operation and maintenance security audit system. Attackers can bypass the input validation mechanism in JumpServer's Ansible to execute arbitrary code within the Celery container. Since the Celery container runs with root privileges and has database access, attackers could steal sensitive information from all hosts or manipulate the database. This vulnerability is fixed in v3.10.7.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-29202",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "jumpserver"
+    ],
+    "cvss_score": 10,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+    "description": "JumpServer is an open source bastion host and an operation and maintenance security audit system. Attackers can exploit a Jinja2 template injection vulnerability in JumpServer's Ansible to execute arbitrary code within the Celery container. Since the Celery container runs with root privileges and has database access, attackers could steal sensitive information from all hosts or manipulate the database. This vulnerability is fixed in v3.10.7.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-29733",
+    "target_cwes": [
+      "CWE-295"
+    ],
+    "all_cwes": [
+      "CWE-295"
+    ],
+    "affected_products": [
+      "Apache Airflow FTP Provider"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Improper Certificate Validation vulnerability in Apache Airflow FTP Provider. The FTP hook lacks complete certificate validation in FTP_TLS connections, which can potentially be leveraged. Implementing proper certificate validation by passing context=ssl.create_default_context() during FTP_TLS instantiation is used as mitigation to validate the certificates properly. This issue affects Apache Airflow FTP Provider: before 3.7.0. Users are recommended to upgrade to version 3.7.0, which fixes the issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-30248",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "piccolo_admin"
+    ],
+    "cvss_score": 7.7,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+    "description": "Piccolo Admin is an admin interface/content management system for Python, built on top of Piccolo. Piccolo's admin panel allows media files to be uploaded. As a default, SVG is an allowed file type for upload. An attacker can upload an SVG which when loaded can allow arbitrary access to the admin page. This vulnerability was patched in version 1.3.2.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-32005",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22",
+      "CWE-23"
+    ],
+    "affected_products": [
+      "nicegui"
+    ],
+    "cvss_score": 8.2,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L",
+    "description": "NiceGUI is an easy-to-use, Python-based UI framework. A local file inclusion is present in the NiceUI leaflet component when requesting resource files under the `/_nicegui/{__version__}/resources/{key}/{path:path}` route. As a result any file on the backend filesystem which the web server has access to can be read by an attacker with access to the NiceUI leaflet website. This vulnerability has been addressed in version 1.4.21. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-32077",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "Apache Airflow"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Apache Airflow version 2.9.0 has a vulnerability that allows an authenticated attacker to inject malicious data into the task instance logs. Users are recommended to upgrade to version 2.9.1, which fixes this issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-32979",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "nautobot"
+    ],
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+    "description": "Nautobot is a Network Source of Truth and Network Automation Platform built as a web application atop the Django Python framework with a PostgreSQL or MySQL database. It was discovered that due to improper handling and escaping of user-provided query parameters, a maliciously crafted Nautobot URL could potentially be used to execute a Reflected Cross-Site Scripting (Reflected XSS) attack against users. All filterable object-list views in Nautobot are vulnerable. This issue has been fixed in Nautobot versions 1.6.20 and 2.2.3. There are no known workarounds for this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-33663",
+    "target_cwes": [
+      "CWE-327"
+    ],
+    "all_cwes": [
+      "CWE-327"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "python-jose through 3.3.0 has algorithm confusion with OpenSSH ECDSA keys and other key formats. This is similar to CVE-2022-29217.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-34072",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "sagemaker-python-sdk"
+    ],
+    "cvss_score": 7.8,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "description": "sagemaker-python-sdk is a library for training and deploying machine learning models on Amazon SageMaker. The sagemaker.base_deserializers.NumpyDeserializer module before v2.218.0 allows potentially unsafe deserialization when untrusted data is passed as pickled object arrays. This consequently may allow an unprivileged third party to cause remote code execution, denial of service, affecting both confidentiality and integrity. Users are advised to upgrade to version 2.218.0. Users unable to upgrade should not pass pickled numpy object arrays which originated from an untrusted source, or that could have been tampered with. Only pass pickled numpy object arrays from trusted sources.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-34073",
+    "target_cwes": [
+      "CWE-78"
+    ],
+    "all_cwes": [
+      "CWE-78"
+    ],
+    "affected_products": [
+      "sagemaker-python-sdk"
+    ],
+    "cvss_score": 7.8,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "description": "sagemaker-python-sdk is a library for training and deploying machine learning models on Amazon SageMaker. In affected versions the capture_dependencies function in `sagemaker.serve.save_retrive.version_1_0_0.save.utils` module allows for potentially unsafe Operating System (OS) Command Injection if inappropriate command is passed as the “requirements_path” parameter. This consequently may allow an unprivileged third party to cause remote code execution, denial of service, affecting both confidentiality and integrity. This issue has been addressed in version 2.214.3. Users are advised to upgrade. Users unable to upgrade should not override the “requirements_path” parameter of capture_dependencies function in `sagemaker.serve.save_retrive.version_1_0_0.save.utils`, and instead use the default value.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-34997",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "joblib v1.4.2 was discovered to contain a deserialization vulnerability via the component joblib.numpy_pickle::NumpyArrayWrapper().read_array(). NOTE: this is disputed by the supplier because NumpyArrayWrapper is only used during caching of trusted content.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-35059",
+    "target_cwes": [
+      "CWE-319"
+    ],
+    "all_cwes": [
+      "CWE-319"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "An issue in the Pickle Python library of NASA AIT-Core v2.5.2 allows attackers to execute arbitrary commands.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-35060",
+    "target_cwes": [
+      "CWE-319"
+    ],
+    "all_cwes": [
+      "CWE-319"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "An issue in the YAML Python library of NASA AIT-Core v2.5.2 allows attackers to execute arbitrary commands via supplying a crafted YAML file.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-36039",
+    "target_cwes": [
+      "CWE-89"
+    ],
+    "all_cwes": [
+      "CWE-89"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "PyMySQL through 1.1.0 allows SQL injection if used with untrusted JSON input because keys are not escaped by escape_dict.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-36110",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "webui"
+    ],
+    "cvss_score": 8.2,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:L",
+    "description": "ansibleguy-webui is an open source WebUI for using Ansible. Multiple forms in versions < 0.0.21 allowed injection of HTML elements. These are returned to the user after executing job actions and thus evaluated by the browser. These issues have been addressed in version 0.0.21 (0.0.21.post2 on pypi). Users are advised to upgrade. There are no known workarounds for these issues.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-37014",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-38521",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "hushline"
+    ],
+    "cvss_score": 8.8,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "description": "Hush Line is a free and open-source, anonymous-tip-line-as-a-service for organizations or individuals. There is a stored XSS in the Inbox. The input is displayed using the `safe` Jinja2 attribute, and thus not sanitized upon display. This issue has been patched in version 0.1.0.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-39705",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "NLTK through 3.8.1 allows remote code execution if untrusted packages have pickled Python code, and the integrated data package download functionality is used. This affects, for example, averaged_perceptron_tagger and punkt.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-39863",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "Apache Airflow"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Apache Airflow versions before 2.9.3 have a vulnerability that allows an authenticated attacker to inject a malicious link when installing a provider. Users are recommended to upgrade to version 2.9.3, which fixes this issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-39877",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-277",
+      "CWE-94"
+    ],
+    "affected_products": [
+      "Apache Airflow"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Apache Airflow 2.4.0, and versions before 2.9.3, has a vulnerability that allows authenticated DAG authors to craft a doc_md parameter in a way that could execute arbitrary code in the scheduler context, which should be forbidden according to the Airflow Security model. Users should upgrade to version 2.9.3 or later which has removed the vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-39903",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "solara"
+    ],
+    "cvss_score": 8.6,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+    "description": "Solara is a pure Python, React-style framework for scaling Jupyter and web apps. A Local File Inclusion (LFI) vulnerability was identified in widgetti/solara, in version <1.35.1, which was fixed in version 1.35.1. This vulnerability arises from the application's failure to properly validate URI fragments for directory traversal sequences such as '../' when serving static files. An attacker can exploit this flaw by manipulating the fragment part of the URI to read arbitrary files on the local file system.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-3126",
+    "target_cwes": [
+      "CWE-78"
+    ],
+    "all_cwes": [
+      "CWE-78"
+    ],
+    "affected_products": [
+      "parisneo/lollms-webui"
+    ],
+    "cvss_score": 8.4,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A command injection vulnerability exists in the 'run_xtts_api_server' function of the parisneo/lollms-webui application, specifically within the 'lollms_xtts.py' script. The vulnerability arises due to the improper neutralization of special elements used in an OS command. The affected function utilizes 'subprocess.Popen' to execute a command constructed with a Python f-string, without adequately sanitizing the 'xtts_base_url' input. This flaw allows attackers to execute arbitrary commands remotely by manipulating the 'xtts_base_url' parameter. The vulnerability affects versions up to and including the latest version before 9.5. Successful exploitation could lead to arbitrary remote code execution (RCE) on the system where the application is deployed.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-3955",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "CraftBeerPi 4",
+      "CraftBeerPi 4"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "URL GET parameter \"logtime\" utilized within the \"downloadlog\" function from \"cbpi/http_endpoints/http_system.py\" is subsequently passed to the \"os.system\" function in \"cbpi/controller/system_controller.py\" without prior validation allowing to execute arbitrary code.This issue affects CraftBeerPi 4: from 4.0.0.58 (commit 563fae9) before 4.4.1.a1 (commit 57572c7).",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-40628",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "jumpserver"
+    ],
+    "cvss_score": 10,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "description": "JumpServer is an open-source Privileged Access Management (PAM) tool that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser. An attacker can exploit the ansible playbook to read arbitrary files in the celery container, leading to sensitive information disclosure. The Celery container runs as root and has database access, allowing the attacker to steal all secrets for hosts, create a new JumpServer account with admin privileges, or manipulate the database in other ways. This issue has been addressed in release versions 3.10.12 and 4.0.0. It is recommended to upgrade the safe versions. There is no known workarounds for this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-40629",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "jumpserver"
+    ],
+    "cvss_score": 10,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "description": "JumpServer is an open-source Privileged Access Management (PAM) tool that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser. An attacker can exploit the Ansible playbook to write arbitrary files, leading to remote code execution (RCE) in the Celery container. The Celery container runs as root and has database access, allowing an attacker to steal all secrets for hosts, create a new JumpServer account with admin privileges, or manipulate the database in other ways. This issue has been patched in release versions 3.10.12 and 4.0.0. It is recommended to upgrade the safe versions. There are no known workarounds for this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-41810",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79",
+      "CWE-80"
+    ],
+    "affected_products": [
+      "twisted"
+    ],
+    "cvss_score": 6.1,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "description": "Twisted is an event-based framework for internet applications, supporting Python 3.6+. The `twisted.web.util.redirectTo` function contains an HTML injection vulnerability. If application code allows an attacker to control the redirect URL this vulnerability may result in Reflected Cross-Site Scripting (XSS) in the redirect response HTML body. This vulnerability is fixed in 24.7.0rc1.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-41937",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "Apache Airflow"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Apache Airflow, versions before 2.10.0, have a vulnerability that allows the developer of a malicious provider to execute a cross-site scripting attack when clicking on a provider documentation link. This would require the provider to be installed on the web server and the user to click the provider link. Users should upgrade to 2.10.0 or later, which fixes this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-42474",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "streamlit"
+    ],
+    "cvss_score": 5.9,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:N",
+    "description": "Streamlit is a data oriented application development framework for python. Snowflake Streamlit open source addressed a security vulnerability via the static file sharing feature. Users of hosted Streamlit app(s) on Windows were vulnerable to a path traversal vulnerability when the static file sharing feature is enabled. An attacker could utilize the vulnerability to leak the password hash of the Windows user running Streamlit. The vulnerability was patched on Jul 25, 2024, as part of Streamlit open source version 1.37.0. The vulnerability only affects Windows.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-42733",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "An issue in Docmosis Tornado v.2.9.7 and before allows a remote attacker to execute arbitrary code via a crafted script to the UNC path input",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-42816",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "A cross-site scripting (XSS) vulnerability in the Create Product function of fastapi-admin pro v0.1.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Product Name parameter.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-42818",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "A cross-site scripting (XSS) vulnerability in the Config-Create function of fastapi-admin pro v0.1.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Product Name parameter.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-43404",
+    "target_cwes": [
+      "CWE-95"
+    ],
+    "all_cwes": [
+      "CWE-95"
+    ],
+    "affected_products": [
+      "MEGABOT"
+    ],
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "MEGABOT is a fully customized Discord bot for learning and fun. The `/math` command and functionality of MEGABOT versions < 1.5.0 contains a remote code execution vulnerability due to a Python `eval()`. The vulnerability allows an attacker to inject Python code into the `expression` parameter when using `/math` in any Discord channel. This vulnerability impacts any discord guild utilizing MEGABOT. This vulnerability was fixed in release version 1.5.0.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-45034",
+    "target_cwes": [
+      "CWE-250"
+    ],
+    "all_cwes": [
+      "CWE-250"
+    ],
+    "affected_products": [
+      "Apache Airflow"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Apache Airflow versions before 2.10.1 have a vulnerability that allows DAG authors to add local settings to the DAG folder and get it executed by the scheduler, where the scheduler is not supposed to execute code submitted by the DAG author. Users are advised to upgrade to version 2.10.1 or later, which has fixed the vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-45399",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-1395",
+      "CWE-79"
+    ],
+    "affected_products": [
+      "indico"
+    ],
+    "cvss_score": 4.3,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+    "description": "Indico is an event management system that uses Flask-Multipass, a multi-backend authentication system for Flask. In Indico prior to version 3.3.4, corresponding to Flask-Multipass prior to version 0.5.5, there is a Cross-Site-Scripting vulnerability during account creation when redirecting to the `next` URL. Exploitation requires initiating the account creation process with a maliciously crafted link, and then finalizing the signup process. Because of this, it can only target newly created (and thus unprivileged) Indico users. Indico 3.3.4 upgrades the dependency on Flask-Multipass to version 0.5.5, which fixes the issue. Those who build the Indico package themselves and cannot upgrade can update the `flask-multipass` dependency to `>=0.5.5` which fixes the vulnerability. Otherwise one could configure one's web server to disallow requests containing a query string with a `next` parameter that starts with `javascript:`.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-45595",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "dtale"
+    ],
+    "cvss_score": 6.1,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "description": "D-Tale is a visualizer for Pandas data structures. Users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.14.1 where the \"Custom Filter\" input is turned off by default.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-45601",
+    "target_cwes": [
+      "CWE-20",
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-20",
+      "CWE-22"
+    ],
+    "affected_products": [
+      "mesop"
+    ],
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "description": "Mesop is a Python-based UI framework designed for rapid web apps development. A vulnerability has been discovered and fixed in Mesop that could potentially allow unauthorized access to files on the server hosting the Mesop application. The vulnerability was related to insufficient input validation in a specific endpoint. This could have allowed an attacker to access files not intended to be served. Users are strongly advised to update to the latest version of Mesop immediately. The latest version includes a fix for this vulnerability. At time of publication 0.12.4 is the most recently available version of Mesop.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-46946",
+    "target_cwes": [
+      "CWE-20"
+    ],
+    "all_cwes": [
+      "CWE-20"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "langchain_experimental (aka LangChain Experimental) 0.1.17 through 0.3.0 for LangChain allows attackers to execute arbitrary code through sympy.sympify (which uses eval) in LLMSymbolicMathChain. LLMSymbolicMathChain was introduced in fcccde406dd9e9b05fc9babcbeb9ff527b0ec0c6 (2023-10-05).",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-47164",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "gradio"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability relates to the **bypass of directory traversal checks** within the `is_in_or_equal` function. This function, intended to check if a file resides within a given directory, can be bypassed with certain payloads that manipulate file paths using `..` (parent directory) sequences. Attackers could potentially access restricted files if they are able to exploit this flaw, although the difficulty is high. This primarily impacts users relying on Gradio’s blocklist or directory access validation, particularly when handling file uploads. Users are advised to upgrade to `gradio>=5.0` to address this issue. As a workaround, users can manually sanitize and normalize file paths in their Gradio deployment before passing them to the `is_in_or_equal` function. Ensuring that all file paths are properly resolved and absolute can help mitigate the bypass vulnerabilities caused by the improper handling of `..` sequences or malformed paths.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-47166",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "gradio"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves a **one-level read path traversal** in the `/custom_component` endpoint. Attackers can exploit this flaw to access and leak source code from custom Gradio components by manipulating the file path in the request. Although the traversal is limited to a single directory level, it could expose proprietary or sensitive code that developers intended to keep private. This impacts users who have developed custom Gradio components and are hosting them on publicly accessible servers. Users are advised to upgrade to `gradio>=4.44` to address this issue. As a workaround, developers can sanitize the file paths and ensure that components are not stored in publicly accessible directories.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-47872",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "gradio"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves **Cross-Site Scripting (XSS)** on any Gradio server that allows file uploads. Authenticated users can upload files such as HTML, JavaScript, or SVG files containing malicious scripts. When other users download or view these files, the scripts will execute in their browser, allowing attackers to perform unauthorized actions or steal sensitive information from their sessions. This impacts any Gradio server that allows file uploads, particularly those using components that process or display user-uploaded files. Users are advised to upgrade to `gradio>=5` to address this issue. As a workaround, users can restrict the types of files that can be uploaded to the Gradio server by limiting uploads to non-executable file types such as images or text. Additionally, developers can implement server-side validation to sanitize uploaded files, ensuring that HTML, JavaScript, and SVG files are properly handled or rejected before being stored or displayed to users.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-47879",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-352",
+      "CWE-94"
+    ],
+    "affected_products": [
+      "OpenRefine"
+    ],
+    "cvss_score": 7.6,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:L",
+    "description": "OpenRefine is a free, open source tool for working with messy data. Prior to version 3.8.3, lack of cross-site request forgery protection on the `preview-expression` command means that visiting a malicious website could cause an attacker-controlled expression to be executed. The expression can contain arbitrary Clojure or Python code. The attacker must know a valid project ID of a project that contains at least one row, and the attacker must convince the victim to open a malicious webpage. Version 3.8.3 fixes the issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-49377",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79",
+      "CWE-80"
+    ],
+    "affected_products": [
+      "OctoPrint"
+    ],
+    "cvss_score": 5.5,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+    "description": "OctoPrint provides a web interface for controlling consumer 3D printers. OctoPrint versions up until and including 1.10.2 contain reflected XSS vulnerabilities in the login dialog and the standalone application key confirmation dialog. An attacker who successfully talked a victim into clicking on a specially crafted login link, or a malicious app running on a victim's computer triggering the application key workflow with specially crafted parameters and then redirecting the victim to the related standalone confirmation dialog could use this to retrieve or modify sensitive configuration settings, interrupt prints or otherwise interact with the OctoPrint instance in a malicious way. The above mentioned specific vulnerabilities of the login dialog and the standalone application key confirmation dialog have been patched in the bugfix release 1.10.3 by individual escaping of the detected locations. A global change throughout all of OctoPrint's templating system with the upcoming 1.11.0 release will handle this further, switching to globally enforced automatic escaping and thus reducing the attack surface in general. The latter will also improve the security of third party plugins. During a transition period, third party plugins will be able to opt into the automatic escaping. With OctoPrint 1.13.0, automatic escaping will be switched over to be enforced even for third party plugins, unless they explicitly opt-out.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-4343",
+    "target_cwes": [
+      "CWE-78"
+    ],
+    "all_cwes": [
+      "CWE-78"
+    ],
+    "affected_products": [
+      "imartinez/privategpt"
+    ],
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A Python command injection vulnerability exists in the `SagemakerLLM` class's `complete()` method within `./private_gpt/components/llm/custom/sagemaker.py` of the imartinez/privategpt application, versions up to and including 0.3.0. The vulnerability arises due to the use of the `eval()` function to parse a string received from a remote AWS SageMaker LLM endpoint into a dictionary. This method of parsing is unsafe as it can execute arbitrary Python code contained within the response. An attacker can exploit this vulnerability by manipulating the response from the AWS SageMaker LLM endpoint to include malicious Python code, leading to potential execution of arbitrary commands on the system hosting the application. The issue is fixed in version 0.6.0.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-50636",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "PyMOL 2.5.0 contains a vulnerability in its \"Run Script\" function, which allows the execution of arbitrary Python code embedded within .PYM files. Attackers can craft a malicious .PYM file containing a Python reverse shell payload and exploit the function to achieve Remote Command Execution (RCE). This vulnerability arises because PyMOL treats .PYM files as Python scripts without properly validating or restricting the commands within the script, enabling attackers to run unauthorized commands in the context of the user running the application.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-51751",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "gradio"
+    ],
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "description": "Gradio is an open-source Python package designed to enable quick builds of a demo or web application. If File or UploadButton components are used as a part of Gradio application to preview file content, an attacker with access to the application might abuse these components to read arbitrary files from the application server. This issue has been addressed in release version 5.5.0 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-52338",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "Apache Arrow R package"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Deserialization of untrusted data in IPC and Parquet readers in the Apache Arrow R package versions 4.0.0 through 16.1.0 allows arbitrary code execution. An application is vulnerable if it reads Arrow IPC, Feather or Parquet data from untrusted sources (for example, user-supplied input files). This vulnerability only affects the arrow R package, not other Apache Arrow implementations or bindings unless those bindings are specifically used via the R package (for example, an R application that embeds a Python interpreter and uses PyArrow to read files from untrusted sources is still vulnerable if the arrow R package is an affected version). It is recommended that users of the arrow R package upgrade to 17.0.0 or later. Similarly, it is recommended that downstream libraries upgrade their dependency requirements to arrow 17.0.0 or later. If using an affected version of the package, untrusted data can read into a Table and its internal to_data_frame() method can be used as a workaround (e.g., read_parquet(..., as_data_frame = FALSE)$to_data_frame()). This issue affects the Apache Arrow R package: from 4.0.0 through 16.1.0. Users are recommended to upgrade to version 17.0.0, which fixes the issue.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-52595",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-184",
+      "CWE-79",
+      "CWE-83"
+    ],
+    "affected_products": [
+      "lxml_html_clean"
+    ],
+    "cvss_score": 7.7,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:H",
+    "description": "lxml_html_clean is a project for HTML cleaning functionalities copied from `lxml.html.clean`. Prior to version 0.4.0, the HTML Parser in lxml does not properly handle context-switching for special HTML tags such as ` `, ` ` and ` `. This behavior deviates from how web browsers parse and interpret such tags. Specifically, content in CSS comments is ignored by lxml_html_clean but may be interpreted differently by web browsers, enabling malicious scripts to bypass the cleaning process. This vulnerability could lead to Cross-Site Scripting (XSS) attacks, compromising the security of users relying on lxml_html_clean in default configuration for sanitizing untrusted HTML content. Users employing the HTML cleaner in a security-sensitive context should upgrade to lxml 0.4.0, which addresses this issue. As a temporary mitigation, users can configure lxml_html_clean with the following settings to prevent the exploitation of this vulnerability. Via `remove_tags`, one may specify tags to remove - their content is moved to their parents' tags. Via `kill_tags`, one may specify tags to be removed completely. Via `allow_tags`, one may restrict the set of permissible tags, excluding context-switching tags like ` `, ` ` and ` `.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-53908",
+    "target_cwes": [
+      "CWE-89"
+    ],
+    "all_cwes": [
+      "CWE-89"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "An issue was discovered in Django 5.1 before 5.1.4, 5.0 before 5.0.10, and 4.2 before 4.2.17. Direct usage of the django.db.models.fields.json.HasKey lookup, when an Oracle database is used, is subject to SQL injection if untrusted data is used as an lhs value. (Applications that use the jsonfield.has_key lookup via __ are unaffected.)",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-53924",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Pycel through 1.0b30, when operating on an untrusted spreadsheet, allows code execution via a crafted formula in a cell, such as one beginning with the =IF(A1=200, eval(\"__import__('os').system( substring.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-55587",
+    "target_cwes": [
+      "CWE-22"
+    ],
+    "all_cwes": [
+      "CWE-22"
+    ],
+    "affected_products": [
+      "n/a"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "python-libarchive through 4.2.1 allows directory traversal (to create files) in extract in zip.py for ZipFile.extractall and ZipFile.extract.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-55655",
+    "target_cwes": [
+      "CWE-20"
+    ],
+    "all_cwes": [
+      "CWE-20",
+      "CWE-325"
+    ],
+    "affected_products": [
+      "sigstore-python"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "sigstore-python is a Python tool for generating and verifying Sigstore signatures. Versions of sigstore-python newer than 2.0.0 but prior to 3.6.0 perform insufficient validation of the \"integration time\" present in \"v2\" and \"v3\" bundles during the verification flow: the \"integration time\" is verified *if* a source of signed time (such as an inclusion promise) is present, but is otherwise trusted if no source of signed time is present. This does not affect \"v1\" bundles, as the \"v1\" bundle format always requires an inclusion promise. Sigstore uses signed time to support verification of signatures made against short-lived signing keys. The impact and severity of this weakness is *low*, as Sigstore contains multiple other enforcing components that prevent an attacker who modifies the integration timestamp within a bundle from impersonating a valid signature. In particular, an attacker who modifies the integration timestamp can induce a Denial of Service, but in no different manner than already possible with bundle access (e.g. modifying the signature itself such that it fails to verify). Separately, an attacker could upload a *new* entry to the transparency service, and substitute their new entry's time. However, this would still be rejected at validation time, as the new entry's (valid) signed time would be outside the validity window of the original signing certificate and would nonetheless render the attacker auditable.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-55890",
+    "target_cwes": [
+      "CWE-79"
+    ],
+    "all_cwes": [
+      "CWE-79"
+    ],
+    "affected_products": [
+      "dtale"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "D-Tale is a visualizer for pandas data structures. Prior to version 3.16.1, users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.16.1 where the `update-settings` endpoint blocks the ability for users to update the `enable_custom_filters` flag. The only workaround for versions earlier than 3.16.1 is to only host D-Tale to trusted users.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-56327",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "pyrage"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "pyrage is a set of Python bindings for the rage file encryption library (age in Rust). `pyrage` uses the Rust `age` crate for its underlying operations, and `age` is vulnerable to GHSA-4fg7-vxc8-qx5w. All details of GHSA-4fg7-vxc8-qx5w are relevant to `pyrage` for the versions specified in this advisory. See GHSA-4fg7-vxc8-qx5w for full details. Versions of `pyrage` before 1.2.0 lack plugin support and are therefore **not affected**. An equivalent issue was fixed in [the reference Go implementation of age](https://github.com/FiloSottile/age), see advisory GHSA-32gq-x56h-299c. This issue has been addressed in version 1.2.3 and all users are advised to update. There are no known workarounds for this vulnerability.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-56373",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "Apache Airflow"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "DAG Author (who already has quite a lot of permissions) could manipulate database of Airflow 2 in the way to execute arbitrary code in the web-server context, which they should normally not be able to do, leading to potentially remote code execution in the context of web-server (server-side) as a result of a user viewing historical task information. The functionality responsible for that (log template history) has been disabled by default in 2.11.1 and users should upgrade to Airflow 3 if they want to continue to use log template history. They can also manually modify historical log file names if they want to see historical logs that were generated before the last log template change.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-5753",
+    "target_cwes": [
+      "CWE-89"
+    ],
+    "all_cwes": [
+      "CWE-89"
+    ],
+    "affected_products": [
+      "vanna-ai/vanna"
+    ],
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "description": "vanna-ai/vanna version v0.3.4 is vulnerable to SQL injection in some file-critical functions such as `pg_read_file()`. This vulnerability allows unauthenticated remote users to read arbitrary local files on the victim server, including sensitive files like `/etc/passwd`, by exploiting the exposed SQL queries via a Python Flask API.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-6345",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "pypa/setuptools"
+    ],
+    "cvss_score": 8.8,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-6891",
+    "target_cwes": [
+      "CWE-94",
+      "CWE-95"
+    ],
+    "all_cwes": [
+      "CWE-94",
+      "CWE-95"
+    ],
+    "affected_products": [
+      "Journyx (jtime)"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "Attackers with a valid username and password can exploit a python code injection vulnerability during the natural login flow.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-6982",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "parisneo/lollms"
+    ],
+    "cvss_score": 8.4,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A remote code execution vulnerability exists in the Calculate function of parisneo/lollms version 9.8. The vulnerability arises from the use of Python's `eval()` function to evaluate mathematical expressions within a Python sandbox that disables `__builtins__` and only allows functions from the `math` module. This sandbox can be bypassed by loading the `os` module using the `_frozen_importlib.BuiltinImporter` class, allowing an attacker to execute arbitrary commands on the server. The issue is fixed in version 9.10.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-8007",
+    "target_cwes": [
+      "CWE-295"
+    ],
+    "all_cwes": [
+      "CWE-295"
+    ],
+    "affected_products": [
+      "Red Hat OpenStack Platform 17.1 for RHEL 8",
+      "Red Hat OpenStack Platform 17.1 for RHEL 8",
+      "Red Hat OpenStack Platform 17.1 for RHEL 9",
+      "Red Hat OpenStack Platform 17.1 for RHEL 9",
+      "Red Hat OpenStack Platform 16.1",
+      "Red Hat OpenStack Platform 16.2"
+    ],
+    "cvss_score": 8.1,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A flaw was found in the openstack-tripleo-common component of the Red Hat OpenStack Platform (RHOSP) director. This vulnerability allows an attacker to deploy potentially compromised container images via disabling TLS certificate verification for registry mirrors, which could enable a man-in-the-middle (MITM) attack.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-8055",
+    "target_cwes": [
+      "CWE-89"
+    ],
+    "all_cwes": [
+      "CWE-89"
+    ],
+    "affected_products": [
+      "vanna-ai/vanna"
+    ],
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "description": "Vanna v0.6.3 is vulnerable to SQL injection via Snowflake database in its file staging operations using the `PUT` and `COPY` commands. This vulnerability allows unauthenticated remote users to read arbitrary local files on the victim server, such as `/etc/passwd`, by exploiting the exposed SQL queries through a Python Flask API.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-8864",
+    "target_cwes": [
+      "CWE-94"
+    ],
+    "all_cwes": [
+      "CWE-94"
+    ],
+    "affected_products": [
+      "composio"
+    ],
+    "cvss_score": 5.5,
+    "cvss_severity": "MEDIUM",
+    "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+    "description": "A vulnerability has been found in composiohq composio up to 0.5.6 and classified as critical. Affected by this vulnerability is the function Calculator of the file python/composio/tools/local/mathematical/actions/calculator.py. The manipulation leads to code injection. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-9701",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "kedro-org/kedro"
+    ],
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "description": "A Remote Code Execution (RCE) vulnerability has been identified in the Kedro ShelveStore class (version 0.19.8). This vulnerability allows an attacker to execute arbitrary Python code via deserialization of malicious payloads, potentially leading to a full system compromise. The ShelveStore class uses Python's shelve module to manage session data, which relies on pickle for serialization. Crafting a malicious payload and storing it in the shelve file can lead to RCE when the payload is deserialized.",
+    "solution": ""
+  },
+  {
+    "source": "NVD_CVE_List_V5",
+    "cve_id": "CVE-2024-9953",
+    "target_cwes": [
+      "CWE-502"
+    ],
+    "all_cwes": [
+      "CWE-502"
+    ],
+    "affected_products": [
+      "VINCE - Vulnerability Information and Coordination Environment"
+    ],
+    "cvss_score": 0.0,
+    "cvss_severity": "UNKNOWN",
+    "cvss_vector": "",
+    "description": "A potential denial-of-service (DoS) vulnerability exists in CERT VINCE software versions prior to 3.0.8. An authenticated administrative user can inject an arbitrary pickle object into a user’s profile, which may lead to a DoS condition when the profile is accessed. While the Django server restricts unpickling to prevent server crashes, this vulnerability could still disrupt operations.",
+    "solution": ""
+  }
+]
